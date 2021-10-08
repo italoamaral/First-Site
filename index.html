@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="virus_stop_corona_virus_covid_icon_142222.ico" type="image/x-icon">
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <a class="logo" href="index.html"><strong>COVID-19</strong></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href= "https://www.linkedin.com/in/italo-guilherme-sim%C3%B5es-amaral-a69704212/" target="_blank" >Sobre</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5527981497550&text=Ol%C3%A1!%20" target="_blank">Contato</a></li>
+        </ul>
+      </nav>
+      
+    </header> 
+    
+    <div id="container" >
+    
+      
+      <canvas class="line-chart"
+      >
+      
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script>
+          var ctx = document.getElementsByClassName("line-chart");
+    
+           // type, data e options 
+           new Chart(ctx, {
+             type: 'line',
+             backgroundColor: 'White',
+           
+             data: {
+                labels: ["Jan","Fev" ,"Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"  ],
+                datasets: [
+                    {
+                        label: "CASOS POR COVID-19 EM 2021 ",
+                    data: [7700578,9283418,10587001,12839844,14725975,16624480,18622304,19938358,20804215,21445651,0,0,], 
+                    borderWidth: 4,
+                    borderColor: 'blue',
+                    backgroundColor: 'rgba(0,0,94,0.05)',
+                    
+                    
+                }, {
+                    label: "CASOS POR COVID-19 EM 2020 ",
+                    data: [0,1000,5.800,200.247,1500310,7000926,8900163,990503,662.231,5000649,5545705,6386787,], 
+                    borderWidth: 4,
+                    borderColor: 'green',
+                    backgroundColor:'rgba(0,127,0,0.05)' 
+                } ], 
+            }  
+           });
+    
+           
+        </script>
+       </canvas>
+
+    
+    </div>  
+    <script src="mobile-navbar.js"></script>
+   
+    
+  </body>
+</html>
